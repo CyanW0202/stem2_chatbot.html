@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<style>
+.open-button {
+background-color: #555;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+opacity: 0.8;
+position: fixed;
+bottom: 23px;
+right: 28px;
+width: 280px;
+}
+.closePopUp{
+display: block;
+position: fixed;
+bottom: 312px;
+right: 50px;
+border: 3px solid #f1f1f1;
+z-index: 99;
+width:30px;
+height:30px;
+background-color: transparent;
+color:#f1f1f1;
+}
+/* The popup chat - hidden by default */
+.chat-popup {
+display: none;
+position: fixed;
+bottom: 0;
+right: 15px;
+border: 3px solid #f1f1f1;
+z-index: 9;
+height:350px;
+}
+
+</style>
+
+
+<body>
+
+<script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+</script>
+
+<button onclick="openForm()" class="open-button">Chat</button><button onclick="openForm()" class="open-button">Chat</button>
+
+<div id="myForm" class="chat-popup">
+	<script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+<iframe src="https://raw.github.com/CyanW0202/stem2_chatbot.html/main/chatbot_style.html" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+  
+   <button onclick="closeForm()" class="closePopUp">X</button>
+</div>
+<p></p>
+
+</body>
+</html>
