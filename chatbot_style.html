@@ -33,7 +33,7 @@
         }
 
         div[role="form"]{
-            background-color: #003767
+            background-color: rgb(244,145,30)
         }
 
         #webchat {
@@ -62,12 +62,14 @@
         const styleOptions = {
 
            // Add styleOptions to customize Web Chat canvas
-           hideUploadButton: true   
+           hideUploadButton: true,   
+           backgroundColor: "#003767",
         };
 
         // Add your BOT ID below 
         var BOT_ID = "63df4b18-72b2-4841-9227-17da43801d2a"; 
         var theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
+        
 
       fetch(theURL)
             .then(response => response.json())
