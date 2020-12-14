@@ -2,16 +2,22 @@
 <html>
 <style>
 .open-button {
-background-color: #555;
-color: white;
-padding: 16px 20px;
-border: none;
-cursor: pointer;
-opacity: 0.8;
+border: 10px solid #FEDE00;
+border-radius: 50%; 
 position: fixed;
 bottom: 23px;
 right: 28px;
-width: 280px;
+height: 150px;
+width: 150px;
+}
+.open-image {
+padding: 5px 2px 0px 2px;
+border-radius: 50%; 
+position: fixed;
+bottom: 23px;
+right: 28px;
+height: 150px;
+width: 150px;
 }
 .closePopUp{
 display: block;
@@ -50,7 +56,7 @@ height:350px;
   }
 </script>
 
-<button onclick="openForm()" class="open-button">Chat</button><button onclick="openForm()" class="open-button">Chat</button>
+<button onclick="openForm()" class="open-button"><img src="https://bot-framework.azureedge.net/bot-icons-v1/63df4b18-72b2-4841-9227-17da43801d2a_zv5lo7U92y3ArgEzjF9a3QY5f0GAw5VPAlQ3AG9HgD154Gu.png" alt="Snow" class = "open-image"></button><button onclick="openForm()" class="open-button"><img src="https://bot-framework.azureedge.net/bot-icons-v1/63df4b18-72b2-4841-9227-17da43801d2a_zv5lo7U92y3ArgEzjF9a3QY5f0GAw5VPAlQ3AG9HgD154Gu.png" alt="Snow" class = "open-image"></button>
 
 <div id="myForm" class="chat-popup">
 	<script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
