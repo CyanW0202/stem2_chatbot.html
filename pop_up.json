@@ -1,0 +1,33 @@
+{
+    "metadata": {
+        "version": "1"
+    },
+    "content": [
+        {
+            "elementType": "buttonContainer",
+            "buttons": [
+                {
+                    "elementType": "linkButton",
+                    "title": "chat",
+                    "events": [
+                        {
+                            "eventName": "click",
+                            "targetId": "myContainer",
+                            "action": "toggle"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "elementType": "visibilityContainer",
+            "id": "myContainer",
+            "content": [
+                {
+                    "elementType": "html",
+                    "html": "<a href=\"https://rawcdn.githack.com/CyanW0202/stem2_chatbot.html/main/chatbot_style.html;\">\n"
+                }
+            ]
+        }
+    ]
+}
