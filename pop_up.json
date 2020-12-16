@@ -25,7 +25,7 @@
             "content": [
                 {
                     "elementType": "html",
-                    "html": "<div style=\"width:100%;position:relative;padding-top:75%;background-color:lightyellow;\"><iframe src=\"https://rawcdn.githack.com/CyanW0202/stem2_chatbot.html/main/chatbot_style.html;\">\n"
+                    "html": "<div style=\"position:relative;background-color:lightyellow;\"><iframe src=\"https://powerva.microsoft.com/webchat/bots/63df4b18-72b2-4841-9227-17da43801d2a\" style=\"height:600px;\">\n"
                 }
             ]
         }
