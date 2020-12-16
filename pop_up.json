@@ -25,7 +25,7 @@
             "content": [
                 {
                     "elementType": "html",
-                    "html": "<a href=\"https://rawcdn.githack.com/CyanW0202/stem2_chatbot.html/main/chatbot_style.html;\">\n"
+                    "html": "<div style=\"width:100%;position:relative;padding-top:75%;background-color:lightyellow;\"><iframe src=\"https://rawcdn.githack.com/CyanW0202/stem2_chatbot.html/main/chatbot_style.html;\">\n"
                 }
             ]
         }
