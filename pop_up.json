@@ -25,7 +25,7 @@
             "content": [
                 {
                     "elementType": "html",
-                    "html": "<div style=\"position:relative;background-color:lightyellow;\"><iframe src=\"https://powerva.microsoft.com/webchat/bots/63df4b18-72b2-4841-9227-17da43801d2a\" style=\"height:600px;\">\n"
+                    "html": "<div style=\"position:relative;background-color:lightyellow;\"><iframe src=\"https://powerva.microsoft.com/webchat/bots/63df4b18-72b2-4841-9227-17da43801d2a\" style=\"height:600px; width:100%\">\n"
                 }
             ]
         }
