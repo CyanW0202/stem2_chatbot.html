@@ -20,7 +20,7 @@
             ]
         },
         {
-            "elementType": "VisibilityContainer",
+            "elementType": "visibilityContainer",
             "id": "myContainer",
             "content": [
                 {
