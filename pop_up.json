@@ -14,6 +14,7 @@
                             "eventName": "click",
                             "targetId": "myContainer",
                             "action": "toggle"
+                           
                         }
                     ]
                 }
@@ -22,6 +23,7 @@
         {
             "elementType": "visibilityContainer",
             "id": "myContainer",
+            "hidden" : true,
             "content": [
                 {
                     "elementType": "html",
