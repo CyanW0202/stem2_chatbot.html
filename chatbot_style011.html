@@ -1,0 +1,96 @@
+<title>STEM2 Chargar</title> 
+    <!-- This styling is for the Web Chat demonstration purposes. Resources from Microsoft: https://docs.microsoft.com/en-us/power-virtual-agents/customize-default-canvas#customize-the-default-canvas-simple -->
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-family: Roboto;
+            line-height: 20px;
+            color: rgb(244,145,30);
+            display: table-cell;
+            
+        }
+
+        #heading {
+            background-color: #003767;
+            height: 100px;
+        }
+
+        .main {
+            margin: 18px;
+            border-radius: 4px;
+            
+        }
+
+        div[role="form"]{
+            background-color: rgb(244,145,30)
+        }
+
+        #webchat {
+            position: fixed;
+            height: 90%;
+            width: 100%;
+            top: 60px;
+            overflow: hidden;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div>
+    
+        <div id="heading">
+            <!-- Change the h1 text to change the bot name -->    
+            <h1><img src="https://bot-framework.azureedge.net/bot-icons-v1/63df4b18-72b2-4841-9227-17da43801d2a_zv5lo7U92y3ArgEzjF9a3QY5f0GAw5VPAlQ3AG9HgD154Gu.png" alt="Snow" style = "height:45px; width:55px; padding:5px 5px 0px 5px;">STEM2 Agent-Chargar</h1>
+            
+        </div>
+        <div id="webchat" role="main"></div>
+    </div>    
+
+  <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+
+  <script>
+        const styleOptions = {
+
+           // Add styleOptions to customize Web Chat canvas
+           hideUploadButton: true,   
+           backgroundColor: "#003767",
+           botAvatarInitials: 'BT',
+           botAvatarImage: "https://bot-framework.azureedge.net/bot-icons-v1/63df4b18-72b2-4841-9227-17da43801d2a_zv5lo7U92y3ArgEzjF9a3QY5f0GAw5VPAlQ3AG9HgD154Gu.png",
+          
+           
+           
+           
+        };
+
+        // Add your BOT ID below 
+        var BOT_ID = "63df4b18-72b2-4841-9227-17da43801d2a"; 
+        var theURL = "https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=" + BOT_ID;
+        
+
+      fetch(theURL)
+            .then(response => response.json())
+            .then(conversationInfo => {
+                window.WebChat.renderWebChat(
+                    {
+                        directLine: window.WebChat.createDirectLine({
+                            token: conversationInfo.token,
+                        }),
+                        styleOptions
+                    },
+                    document.getElementById('webchat')
+                );
+            })
+            .catch(err => console.error("An error occurred: " + err));
+
+    </script>
+  </body>
+</html>
