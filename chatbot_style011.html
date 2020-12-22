@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>STEM2 Chargar</title> 
     <!-- This styling is for the Web Chat demonstration purposes. Resources from Microsoft: https://docs.microsoft.com/en-us/power-virtual-agents/customize-default-canvas#customize-the-default-canvas-simple -->
     <style>
@@ -16,6 +20,17 @@
             color: rgb(244,145,30);
             display: table-cell;
             
+        }
+        @media only screen and (orientation: portrait){
+        h1 {
+            font-size: 60px;
+            font-family: Roboto;
+            line-height: 60px;
+            color: rgb(244,145,30);
+            display: table-cell;
+            
+        }
+        
         }
 
         #heading {
@@ -37,8 +52,17 @@
             position: fixed;
             height: 90%;
             width: 100%;
-            top: 10%;
+            top: 60px;
             overflow: hidden;
+        }
+        @media only screen and (orientation: portrait){
+        #webchat {
+            position: fixed;
+            height:  calc(90% - 60px);
+            width: 100%;
+            top: 60px;
+            overflow: hidden;
+        }
         }
 
     </style>
